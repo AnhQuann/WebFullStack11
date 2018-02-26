@@ -1,0 +1,27 @@
+.bold {
+  color: #df0b37;
+  font-weight: bold;
+}
+p {
+  font-size: 25px;
+}
+
+#colorGray {
+  color: #165fdb;
+}
+
+input[type=text] {
+  color: #25d126;
+}
+
+ul li {
+  color: #5b5548;
+}
+
+ul>li {
+  color: #fc4b12;
+}
+
+a:hover {
+  color: #548814;
+}
