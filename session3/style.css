@@ -1,0 +1,42 @@
+.menu {
+  background-color: #D5B0AC;
+  font-weight: bold;
+  color: #402E2A;
+  text-align: center;
+  position: relative;
+}
+
+span {
+  width: 100px;
+  height: 30px;
+  display: inline-block;
+  line-height: 30px;
+  background-color: #D5B0AC;
+  margin-bottom: 1px;
+  /* position: relative; */
+}
+
+span:hover {
+  background-color: #9CD08F;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.menu.menu-drop {
+  display: none;
+  position: absolute;
+}
+
+.menu.menu-drop span {
+  display: block;
+}
+
+.menu span:hover > .menu.menu-drop{
+  display: block;
+
+}
+
+.menu-drop .menu-drop{
+  left: 101px;
+  top:  93px;
+}

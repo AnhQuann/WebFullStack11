@@ -1,0 +1,15 @@
+position {
+  static,
+  relative,
+  fixed,
+  absolute
+}
+
+trasform {
+  trasnlate(),
+  rotate3d
+}
+
+transition <property> <duration> <easing> <delay> {
+  scale
+}
