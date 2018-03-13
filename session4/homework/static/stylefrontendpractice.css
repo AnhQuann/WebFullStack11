@@ -1,0 +1,60 @@
+.bold {
+  color: #df0b37;
+  font-weight: bold;
+}
+p {
+  font-size: 25px;
+}
+
+#colorGray {
+  color: #165fdb;
+}
+
+input[type=text] {
+  color: #25d126;
+}
+
+ul li {
+  color: #5b5548;
+}
+
+ul>li {
+  color: #fc4b12;
+}
+
+a:hover {
+  color: #548814;
+}
+
+.nav {
+  border: 1px solid red;
+  border-width: 1px 0;
+  width: 100%;
+  background-color:#2f2e2a;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.nav li {
+  display: inline;
+
+}
+
+.nav a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.p-20 {
+  padding: 0px 40px;
+}
+
+.nav a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid red;
+  padding: 0 5px;
+}

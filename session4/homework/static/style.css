@@ -1,0 +1,83 @@
+body {
+  background-color: rgb(219, 199, 13);
+}
+
+.nav {
+  border: 1px solid red;
+  border-width: 1px 0;
+  width: 100%;
+  background-color:#2f2e2a;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.nav li {
+  display: inline;
+
+}
+
+.nav a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.p-20 {
+  padding: 0px 40px;
+}
+
+.nav a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid red;
+  padding: 0 5px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.item {
+  width: 40%;
+  height: 1000px;
+}
+
+.image {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#profile-image {
+  background-image: url("https://scontent.fhan3-2.fna.fbcdn.net/v/t1.0-9/28168358_1529722063808886_104359726295200255_n.jpg?oh=f1fab7bd8a55f35b32c072aac01d2e81&oe=5B4A5236");
+}
+
+#contact-image {
+  background-image: url("https://www.whizsky.com/wp-content/uploads/2015/04/Fotor_142998530034819.jpg");
+}
+
+.text {
+  font-family: 'Lobster', cursive;
+  font-size: 33px;
+}
+
+p {
+  margin: 0px;
+  font-style: italic;
+}
+.profile-text {
+  margin: 0px 50px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 200px;
+  font-size: 50px;
+}
+
+h2 {
+  margin: 0px;
+}
