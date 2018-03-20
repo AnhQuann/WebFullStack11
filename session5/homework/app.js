@@ -20,7 +20,9 @@ app.get('/', (req, res) => {
   // console.log(questionList.length);
 
   if (questionList.length > 0) {
+    console.log(questionList);
     res.render('showAsk', {
+      arr: questionList,
       question: question.questionContent,
       id: question.id,
     })
@@ -37,7 +39,7 @@ app.post('/', (req, res) => {
   let id = req.body.id;
   let question = questionList[id];
 
-  console.log(questionList);
+  // console.log(questionList);
 
   if (req.body.yes) {
     questionList.forEach(function(el){
@@ -53,7 +55,7 @@ app.post('/', (req, res) => {
     })
   }
 
-  console.log(questionList);
+  // console.log(questionList);
   fileController.writeFile('./data.json', questionList, (err) => {
     if (err) {
       console.log(err);
@@ -62,14 +64,6 @@ app.post('/', (req, res) => {
   res.redirect('/question/' + id);
 });
 
-  // console.log(question);
-  // if (req.body.yes) {
-  //   question.yes += 1;
-  // } else if (req.body.no) {
-  //   question.no += 1;
-  // }
-  //
-  // res.redirect('/question/' + id);
 
 app.get('/ask', (req, res) => {
   res.render('ask');
