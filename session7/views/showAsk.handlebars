@@ -1,0 +1,18 @@
+<div class="text-center container d-flex flex-column">
+  <h1>{{{question}}}</h1>
+
+  <form class="" action="/" method="post">
+    <button class="m-5 w-25 btn btn-success" type="submit" name="yes" value="1">Yes</button>
+    <button class="m-5 w-25 btn btn-danger" type="submit" name="no" value="0">No</button>
+    <input type="hidden" name="id" value={{id}}>
+    <input type="hidden" name="question" value={{question}}>
+    <button class="m-5 w-25 btn btn-info">Result</button>
+    <button class="m-5 w-25 btn btn-warning" name="other" value="2">Other Question</button>
+  </form>
+</div>
+
+<!-- <ul>
+  {{#each arr}}
+    <li>{{this.id}}</li>
+  {{/each}}
+</ul> -->

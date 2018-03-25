@@ -11,6 +11,11 @@ Router.get('/', (req, res) => {
 Router.post('/', (req, res) => {
   try {
     questionController.create(req.body.question);
+    // questionController.loadAllData((el) => {
+    //   console.log(el);
+    // });
+    id = req.params.id;
+    console.log(id);
   } catch (ex) {
     console.log(ex);
   }
