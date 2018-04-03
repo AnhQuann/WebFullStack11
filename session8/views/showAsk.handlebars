@@ -1,0 +1,27 @@
+<div class="text-center container d-flex flex-column">
+  <h1 id = 'questionContent'>{{{question}}}</h1>
+
+  <form class="" action="/" method="post">
+    <button class="m-5 w-25 btn btn-success" type="submit" name="yes" value="1">Yes</button>
+    <button class="m-5 w-25 btn btn-danger" type="submit" name="no" value="0">No</button>
+    <input type="hidden" name="id" value={{id}}>
+    <button class="m-5 w-25 btn btn-info">Result</button>
+    <button id="otherQuestion" class="m-5 w-25 btn btn-warning" name="other" value="2">Other Question</button>
+  </form>
+</div>
+
+<script>
+  $(document).ready(function(){
+    $('#otherQuestion').click(function(event){
+      event.preventDefault();
+      $.ajax({
+        url: "/getquestion",
+        method: "POST",
+        success: function(res) {
+          // console.log(res);
+          $('#questionContent').html(res.questionContent);
+        }
+      })
+    })
+  })
+</script>

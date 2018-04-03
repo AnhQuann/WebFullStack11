@@ -1,0 +1,21 @@
+<h1 class="text-center">Let's ASK!</h1>
+
+<form class="d-flex flex-column container" action="/ask" method="post">
+  <textarea class="text-center" id="questionInput" name="question" rows="8" cols="80" maxlength="200" onkeyup="count(this)" required></textarea>
+  <span class="font-italic">Còn <span id="charater">200</span>/200 ký tự </span>
+  <button class="btn btn-dark w-25" type="submit">Send</button>
+</form>
+
+<script>
+  $(document).ready(function() {
+    $('form').submit(function(){
+      $.ajax({
+        url: '/testajax',
+        method: "POST",
+        success: function(response) {
+          console.log(response);
+        }
+      })
+    })
+  })
+</script>
